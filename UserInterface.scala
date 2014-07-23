@@ -14,8 +14,15 @@ class UserInterface {
     pattern
   }
 
+  def getOption(): Int = {
+    println("0 moves, 1 renames. ")
+    val opt: Int = readInt()
+    opt
+  }
+
 }
 
 val ui = new UserInterface
 println(ui.getDirectoryName)
 println(ui.getFilePattern)
+println(ui.getOption)
