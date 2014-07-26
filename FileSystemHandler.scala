@@ -1,3 +1,4 @@
+package name.ambidextrous.rorganize
 import java.io.File
 
 class FileSystemHandler {
@@ -15,4 +16,4 @@ class FileSystemHandler {
 }
 
 // new FileSystemHandler().getAllFiles("./")
-new FileSystemHandler().getFilesWithExtension("./", "scala")
+// new FileSystemHandler().getFilesWithExtension("./", "scala")

@@ -1,6 +1,6 @@
+package name.ambidextrous.rorganize
 // Reads the user input
 import java.io.File
-import FileSystemHandler._
 
 class UserInterface {
 	def getDirectoryName(): String = {
@@ -23,9 +23,12 @@ class UserInterface {
 
 }
 
-val ui = new UserInterface
-println(ui.getDirectoryName)
-// println(ui.getFilePattern)
-// println(ui.getOption)
-new FileSystemHandler().getAllFiles("./")
-new FileSystemHandler().getFilesWithExtension("./", "scala")
+object Main extends App {
+
+  val ui = new UserInterface
+  println(ui.getDirectoryName)
+  // println(ui.getFilePattern)
+  // println(ui.getOption)
+  new FileSystemHandler().getAllFiles("./")
+  new FileSystemHandler().getFilesWithExtension("./", "scala")
+}
