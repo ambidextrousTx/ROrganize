@@ -1,5 +1,6 @@
 // Reads the user input
 import java.io.File
+import FileSystemHandler._
 
 class UserInterface {
 	def getDirectoryName(): String = {
@@ -24,5 +25,7 @@ class UserInterface {
 
 val ui = new UserInterface
 println(ui.getDirectoryName)
-println(ui.getFilePattern)
-println(ui.getOption)
+// println(ui.getFilePattern)
+// println(ui.getOption)
+new FileSystemHandler().getAllFiles("./")
+new FileSystemHandler().getFilesWithExtension("./", "scala")
